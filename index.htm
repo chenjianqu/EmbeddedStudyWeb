@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>某网站</title>
+<style type="text/css">
+body {
+	background-image: url(bg2.jpg);
+	background-attachment: fixed;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+a:link {
+	color: #454545;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #707070;
+}
+a:hover {
+	text-decoration: none;
+	color: #707070;
+}
+a:active {
+	text-decoration: none;
+	color: #727272;
+}
+</style>
+
+<script type="text/javascript">
+var curIndex=0;
+var i=0;
+var timeInterval=200;
+var arr=new Array();
+arr[0]="tpic3.png";
+arr[1]="tpic2.png";
+arr[2]="tpic1.png";
+arr[3]="tpic1.png";
+arr[4]="tpic2.png";
+arr[5]="tpic3.png";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=0;
+		
+    }
+    else
+    {
+        curIndex+=1;
+    }
+	if(i<20){
+		obj.src=arr[0];
+	}else{
+		obj.src=arr[curIndex];
+	}
+	i++;
+	if(i>23)i=0;
+	
+    
+}
+
+</script>
+	
+</head>
+
+<body>
+<div style="color: #B07778">
+  <table width="40%" border="0" align="right" cellpadding="1">
+    <tbody>
+      <tr>
+        <td style="text-align: center; font-family: '黑体';"><a href="index.htm" target="_parent">主页</a></td>
+        <td style="text-align: center; font-family: '黑体';"><a href="stack_frame.html" target="_parent">技术栈</a></td>
+        <td style="text-align: center; font-family: '黑体';"><a href="remote.html" target="_parent">远程控制</a></td>
+        <td style="text-align: center; font-family: '黑体';"><a href="document_frame.html" target="_parent">资料下载</a></td>
+        <td style="text-align: center; font-family: '黑体';"><a href="about.html" target="_parent">关于作者</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+<div style="align-content: center">
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<center><img id=obj src="title.png" alt="" width="945" height="590" align="middle"/></center></div>
+	<br/>
+	<br/>
+	<br/>
+
+<div style="color: #FCFCFC; font-size: 18px; font-family: '黑体'; text-align: center;">
+	
+
+	
+</div>
+	
+<div style="color: #FFFFFF">
+	<br/>
+	<br/>
+	<br/>
+	<p style="text-align: center; font-size: 14px;">
+		<a href="about.html" target="_blank">chenjianqu</a>
+	<img src="myicon.jpg" width="20" height="19" alt=""/> </p>
+	<p style="text-align: center; font-size: 14px;"><a href="mailto:1127501693@qq.com">与我联系 </a>
+  </p>
+</div>	
+	
+</body>
+</html>
